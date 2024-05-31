@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:test": "cross-env test_env=test npx playwright test",
-    "test:dev": "cross-env test_env=dev npx playwright test",
+    "test:dev": "cross-env test_env=dev npx playwright test --username=%USERNAME% --password=%PASSWORD%",
     "test:prod": "cross-env test_env=prod npx playwright test"
   },
   "keywords": [],
