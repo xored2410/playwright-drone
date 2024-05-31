@@ -4,7 +4,7 @@ type: docker
 name: default
 
 steps:
-- name: Pplaywright tests
+- name: Pplaywsright tests
   image: node
   commands:
   - npm install
