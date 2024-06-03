@@ -4,8 +4,13 @@ type: docker
 name: default
 
 steps:
-- name: Pplaywsright tests
+- name: BRANCH SECRETS
   image: node
+  environment: 
+    USERNAME:
+      from_secret: username
+    PASSWORD:
+      from_secret: password
   commands:
-  - npm install
-  - npm run test:dev
+  - echo $USERNAME
+  - echo $PASSWORD
