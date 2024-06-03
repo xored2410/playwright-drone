@@ -8,9 +8,13 @@ test('Diverse environments', async ({}) => {
 
 
 
-    const username = process.env.npm_config_username ? process.env.npm_config_username : "Eddie";
+    //const username = process.env.npm_config_username ? process.env.npm_config_username : "Eddie";
+
+    const username = process.env.npm_config_username;
+    const password = process.env.npm_config_password;
 
   console.log("Hello", username);
+  console.log("Your pass is: ", password);
 
 
 

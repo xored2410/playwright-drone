@@ -16,4 +16,4 @@ steps:
   - echo $PASSWORD
   - echo Installing dependencies
   - npm install
-  - npm run test:dev --username=$USERNAME
+  - npm run test:dev
