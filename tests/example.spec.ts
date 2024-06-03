@@ -3,10 +3,11 @@ import ENV from '../utils/env';
 
 test('Diverse environments', async ({}) => {
 
+  console.log(`This is base URL: ${process.env.USERNAME}`);
 
 
   console.log(`This is base URL: ${ENV.BASE_URL}`);
-  console.log(`This is username: ${ENV.USERNAME}`);
+  //console.log(`This is username: ${ENV.USERNAME}`);
   console.log(`This is password: ${ENV.PASSWORD}`);
 
 
