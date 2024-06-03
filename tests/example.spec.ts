@@ -3,7 +3,15 @@ import ENV from '../utils/env';
 
 test('Diverse environments', async ({}) => {
 
-  console.log(`This is SPARTA: ${process.env.USERNAME}`);
+
+  console.log(`This is SPARTA: ${process.env.username}`);
+
+
+
+    const username = process.env.npm_config_username ? process.env.npm_config_username : "Eddie";
+
+  console.log("Hello", username);
+
 
 
   console.log(`This is base URL: ${ENV.BASE_URL}`);
